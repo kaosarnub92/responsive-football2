@@ -1,0 +1,178 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Header Container Styles */
+.header-container{
+    width: 1440px;
+    height: 677px;
+    background-color: #2D25A0;
+}
+/* Header Navigation Bar Styles */
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+}
+.fa-sign-in-alt{
+    padding-right: 15px;
+}
+.header-container{
+    padding: 42px 0 42px 0;
+}
+nav{
+    width: 1160px;
+    height: 44px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.login-btn{
+    width: 123px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    background-color: #E02C6D;
+}
+.broadcast-link{
+    text-decoration: none;
+    color: white;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    padding: 10px 24px 10px 24px;
+}
+.football-event{
+    padding-top: 70px;
+}
+.event-title h1{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+}
+.event-photo img{
+    width: 556px;
+    height: 438px;
+}
+.football-event{
+    display: flex;
+    justify-content: center;
+}
+.header-container:hover img{
+    transform: rotate(60deg);
+}
+.event-photo img{
+    transition: transform 1s ease-out;
+}
+
+/* Players Section styles */
+
+
+players-container{
+    background-color: black;
+}
+.player{
+    width: 300px;
+    height: 474px;
+    background-color: white;
+    padding: 10px;
+    display: inline;
+    align-items: center;
+    box-shadow: 5px 8px 5px 8px lightgray;
+    
+}
+.player img{
+    width: 100%;
+}
+.players{
+    margin: 70px 180px 70px 180px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    justify-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+/* woman's & Girl's Section style */
+
+.woman-football-title{
+    text-align: center;
+    font-weight: 700;
+}
+
+.womans-football{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+    grid-gap: 30px 30px;
+    justify-items: center;
+    background-color: lightgray;
+    padding: 10px;
+    
+}
+.woman-football:hover img{
+    transform: scale(1.3);
+    overflow: hidden;
+    
+}
+.woman-football{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    
+}
+.woman-football img{
+    width: 100%;
+    transition:transform  1s ease-in-out .2s;
+}
+
+/* Styles about Sponsors */
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Footer section Styles */
+
+.footer-container{
+    width: 484px;
+    height: 213px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+}
+.footer-img img{
+    width: 50%;
+}
+.fab{
+    padding: 5px;
+}
+.fa-instagram, .fa-internet-explorer, .fa-twitter, .fa-youtube {
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+
+/* About Responsiveness different device such and mobile phone and Tablate  */
+
+@media only screen and (max-width:668px) {
+
+    .players, .womans-football {
+        grid-template-columns: repeat(1, 1fr);
+    }
+   .football-event, .sponsors{
+       flex-direction: column;
+       display: block;
+   }
+}
+
+@media only screen and (max-width:992px) {
+    .players, .womans-football{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .football-event, .sponsors{
+        flex-direction: column;
+       display: block;
+
+    }
+}
